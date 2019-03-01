@@ -1,2 +1,35 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div id="banner">
+  <div class="banner_content">
+    <h1>FileCabinet</h1>
+    <p>Your life's work. Organized, always.</p>
+    <button>
+      <%= link_to "Enter", new_user_registration_path %>
+    </button>
+  </div>
+</div>
+
+<div id="callouts">
+  <div class="callout_inner">
+    <div class="wrapper">
+      <div class="callout">
+        <h2>Organize</h2>
+        <p>Lorem ipsum dolor amet microdosing DIY leggings everyday carry master cleanse la croix helvetica iPhone tofu art party kogi cardigan. 
+        Lumbersexual hexagon listicle fashion axe asymmetrical narwhal helvetica messenger bag succulents snackwave single-origin coffee. 
+        Celiac post-ironic cold-pressed thundercats microdosing farm-to-table slow-carb bitters helvetica jean shorts. 
+        Shaman food truck irony cronut kitsch. Raclette locavore fingerstache, vexillologist wolf enamel pin 90's keffiyeh farm-to-table butcher beard. 
+        Intelligentsia ramps ethical chicharrones mixtape hoodie viral farm-to-table cliche literally semiotics pabst bespoke pinterest. 
+        Tofu hoodie whatever tattooed try-hard intelligentsia vexillologist chambray yr raw denim.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bottom_cta">
+  <div class="wrapper">
+    <h2>Go Ahead!</h2>
+    <br>
+    <button>
+      <%= link_to "Join Now", new_user_registration_path %>
+    </button>
+  </div>
+</div>
