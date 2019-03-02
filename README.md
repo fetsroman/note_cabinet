@@ -5,3 +5,4 @@
 ###### Differences:
 
 * Not used HAML
+* Add RSpec tests
