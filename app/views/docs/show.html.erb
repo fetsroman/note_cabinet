@@ -1,14 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div class="wrapper_with_padding">
+  <div id="doc_show">
+    <h1 class="title"> <%= @doc.title %> </h1>
+    <p> <%= simple_format(@doc.content) %> </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @doc.title %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @doc.content %>
-</p>
-
-<%= link_to 'Edit', edit_doc_path(@doc) %> |
-<%= link_to 'Back', docs_path %>
+    <div class="buttons">
+      <%= link_to 'Fix Doc', edit_doc_path(@doc), class: "button" %>
+      <%= link_to "Trash It", docs_path(@doc), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
+      <%= link_to 'Back', docs_path, class: "button" %>
+    </div>
+  </div>
+</div>
